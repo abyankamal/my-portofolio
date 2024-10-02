@@ -1,7 +1,10 @@
+import Header from "./components/Headers";
+
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-neutral-600 max-w-7xl scroll-smooth">
       {/* header */}
+      <Header />
       <h1>Muhammad Abyan Kamal</h1>
       <p>Software Engineer</p>
       {/* about */}
@@ -30,6 +33,6 @@ export default function Home() {
       {/* contact */}
       <p>You can contact me at Below</p>
       {/* footer */}
-    </>
+    </div>
   );
 }
