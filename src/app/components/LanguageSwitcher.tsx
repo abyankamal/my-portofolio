@@ -10,7 +10,6 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import Image, { StaticImageData } from "next/image";
 import Indonesian from "@/app/public/indonesia.png";
 import UK from "@/app/public/english.png";
-import Arabic from "@/app/public/arab.png";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
@@ -22,7 +21,6 @@ interface Language {
 const languages: Language[] = [
   { id: "en", avatar: UK },
   { id: "id", avatar: Indonesian },
-  { id: "ar", avatar: Arabic },
 ];
 
 function classNames(...classes: string[]): string {

@@ -1,13 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ChangeLanguage from "./LanguageSwitcher";
+// import ChangeLanguage from "./LanguageSwitcher";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "@/app/public/logo.png";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 export default function Header() {
   const navigation = [
@@ -19,7 +17,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const t = useTranslations("Header");
+  // const t = useTranslations("Header");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,23 +33,21 @@ export default function Header() {
   return (
     <header
       className={
-        isScrolled ? "fixed top-0 left-0 w-full bg-white shadow-md z-50" : ""
+        isScrolled
+          ? "fixed top-0 left-0 w-full bg-white shadow-md z-50"
+          : "top-0 left-0 w-full bg-white shadow-md z-50"
       }
     >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <Image className="h-[70px] w-auto" src={logo} alt="" />
-        </div>
-        <div className="flex lg:hidden">
+        <div className="flex-1 lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -62,13 +58,14 @@ export default function Header() {
               href={item.href}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              {t(item.name)}
+              {/* {t(item.name)} */}
+              {item.name}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <ChangeLanguage />
-        </div>
+        </div> */}
       </nav>
       <Dialog
         className="lg:hidden"
@@ -78,10 +75,6 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image className="h-[70px] w-auto" src={logo} alt="" />
-            </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -100,13 +93,14 @@ export default function Header() {
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    {t(item.name)}
+                    {/* {t(item.name)} */}
+                    {item.name}
                   </a>
                 ))}
               </div>
-              <div className="py-6">
+              {/* <div className="py-6">
                 <ChangeLanguage />
-              </div>
+              </div> */}
             </div>
           </div>
         </DialogPanel>
