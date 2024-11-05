@@ -1,5 +1,4 @@
 // import Header from "./components/Headers";
-import Image from "next/image";
 import Typewriter from "./components/Typewriter";
 import Laravel from "@/app/public/laravel.png";
 import Python from "@/app/public/python.png";
@@ -7,6 +6,7 @@ import NextJS from "@/app/public/nextjs.png";
 import Tailwind from "@/app/public/tailwind.png";
 import Vue from "@/app/public/vue.png";
 import ProjectList from "./components/ProjectList";
+import { SkillCard } from "./components/SkillCard";
 
 type NavigationItem = {
   name: string;
@@ -72,7 +72,7 @@ export default function Home() {
           className="text-white text-2xl text-center mt-2 mb-5"
         />
         {/* about */}
-        <div className="bg-gradient-to-r mx-auto from-purple-500 to-blue-500 rounded-lg w-1/2 shadow-lg p-6">
+        <div className="bg-gradient-to-r mx-5 sm:mx-12 lg:mx-auto from-purple-500 to-blue-500 rounded-lg lg:w-1/2 shadow-lg p-6">
           {" "}
           {/* Added card styling */}
           <h1 className="text-2xl font-semibold text-white text-center pt-8">
@@ -100,13 +100,17 @@ export default function Home() {
         <h1 className="text-2xl font-semibold text-white text-center pt-8">
           Skills
         </h1>
-        <div className="grid grid-cols-5 gap-4 mx-auto p-5">
-          <Image src={Laravel} alt="uk" />
-          <Image src={Python} alt="uk" />
-          <Image src={NextJS} alt="uk" />
-          <Image src={Vue} alt="uk" />
-          <Image src={Tailwind} alt="uk" />
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto p-5">
+          {" "}
+          {/* Responsive grid */}
+          {/* Skill Card Component */}
+          <SkillCard src={Laravel} alt="Laravel" />
+          <SkillCard src={Python} alt="Python" />
+          <SkillCard src={NextJS} alt="Next.js" />
+          <SkillCard src={Vue} alt="Vue.js" />
+          <SkillCard src={Tailwind} alt="Tailwind CSS" />
         </div>
+
         {/* projects */}
         <p className="text-2xl font-semibold text-white text-center pt-8">
           Here are some of my projects
