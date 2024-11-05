@@ -72,14 +72,30 @@ export default function Home() {
           className="text-white text-2xl text-center mt-2 mb-5"
         />
         {/* about */}
-        <h1 className="text-2xl font-semibold text-white text-center pt-8">
-          About Me
-        </h1>
-        <p className="text-wrap text-white mx-auto p-5 text-justify mb-5">
-          Hello, my name is Muhammad Abyan Kamal. I am a graduate from Institut
-          Teknologi Garut who has a passion for technology, especially
-          programming.
-        </p>
+        <div className="bg-gradient-to-r mx-auto from-purple-500 to-blue-500 rounded-lg w-1/2 shadow-lg p-6">
+          {" "}
+          {/* Added card styling */}
+          <h1 className="text-2xl font-semibold text-white text-center pt-8">
+            About Me
+          </h1>
+          <div className="text-white text-justify">
+            <p>
+              Hello, my name is Muhammad Abyan Kamal. I&apos;m a passionate IT
+              enthusiast and results-oriented Full Stack Engineer with 1 year of
+              experience in designing, developing, and deploying robust and
+              scalable web applications. My enthusiasm for technology fuels my
+              commitment to continuous learning and innovation, allowing me to
+              consistently deliver high-quality, user-friendly applications.
+            </p>
+            <p className="mt-4">
+              Proficient in both front-end and back-end technologies, I possess
+              a strong understanding of the entire software development
+              lifecycle. I thrive in collaborative environments and am adept at
+              working with cross-functional teams to achieve project goals.
+            </p>
+          </div>
+        </div>
+
         {/* skills */}
         <h1 className="text-2xl font-semibold text-white text-center pt-8">
           Skills
