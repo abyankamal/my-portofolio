@@ -2,7 +2,7 @@ import Page from "../page";
 
 export default function About() {
   return (
-    <Page title="About">
+    <Page title="About Me">
       <div className="text-black text-justify">
         <p>
           Hello, my name is Muhammad Abyan Kamal. I&apos;m a passionate IT

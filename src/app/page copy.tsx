@@ -100,9 +100,6 @@ export default function Home() {
           Skills
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto p-5">
-          {" "}
-          {/* Responsive grid */}
-          {/* Skill Card Component */}
           <SkillCard src={Laravel} alt="Laravel" />
           <SkillCard src={Python} alt="Python" />
           <SkillCard src={NextJS} alt="Next.js" />
