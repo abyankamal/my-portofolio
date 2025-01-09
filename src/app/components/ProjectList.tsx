@@ -20,7 +20,7 @@ export default function ProjectList() {
       techStack: ["React", "NextJS", "TailwindCSS", "Prisma", "PostgreSQL"],
     },
     {
-      name: "JobHuntly",
+      name: "The Wild Oasis",
       description: "This is a website for booking hotel with many features",
       image: thewildoasis,
       techStack: [
@@ -36,7 +36,7 @@ export default function ProjectList() {
   ];
 
   return (
-    <div className="grid grid-flow-row gap-4 mx-auto p-5">
+    <div className="grid grid-flow-row gap-4 mx-auto p-5 mb-10">
       {projectList.map((project, index) => (
         <div
           key={index} // Add a unique key for each element in the list

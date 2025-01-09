@@ -13,7 +13,9 @@ export default function Page({
         <h1 className="text-2xl font-semibold text-black text-center pt-8">
           {title}
         </h1>
-        <div className="px-4 py-5 sm:p-6 h-full">{children}</div>
+        <div className="px-4 py-5 sm:p-6 h-full overflow-scroll">
+          {children}
+        </div>
       </div>
       <footer className="mt-auto bg-white">
         <div className="mx-auto max-w-7xl px-3 py-4 flex items-center justify-center sm:px-6 lg:px-8">

@@ -8,7 +8,7 @@ import Bootstrap from "@/app/public/bootstrap.png";
 import Adonis from "@/app/public/adonis.png";
 import Page from "../page";
 
-export default function SKill() {
+export default function Skill() {
   return (
     <Page title="Skill">
       <div className="grid grid-cols-3 md:grid-cols-5 gap-4 mx-auto p-5">
