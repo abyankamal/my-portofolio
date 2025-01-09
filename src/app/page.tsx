@@ -1,4 +1,3 @@
-// import Header from "./components/Headers";
 import Typewriter from "./components/Typewriter";
 import Laravel from "@/app/public/laravel.png";
 import Python from "@/app/public/python.png";
