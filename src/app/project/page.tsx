@@ -1,10 +1,10 @@
-import Page from "../page";
 import ProjectList from "../components/ProjectList";
+import Canvas from "../components/Canvas";
 
 export default function Project() {
   return (
-    <Page title="Project">
+    <Canvas title="Project">
       <ProjectList />
-    </Page>
+    </Canvas>
   );
 }

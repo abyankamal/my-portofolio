@@ -1,8 +1,8 @@
-import Page from "../page";
+import Canvas from "../components/Canvas";
 
 export default function About() {
   return (
-    <Page title="About Me">
+    <Canvas title="About Me">
       <div className="text-black text-justify">
         <p>
           Hello, my name is Muhammad Abyan Kamal. I&apos;m a passionate IT
@@ -19,6 +19,6 @@ export default function About() {
           cross-functional teams to achieve project goals.
         </p>
       </div>
-    </Page>
+    </Canvas>
   );
 }
