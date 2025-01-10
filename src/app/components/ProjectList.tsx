@@ -44,7 +44,7 @@ export default function ProjectList() {
         >
           <div className="px-4 py-5 sm:px-6">
             {/* Header Content */}
-            <p className="text-2xl font-semibold text-center">{project.name}</p>
+            <p className="text-2xl font-medium text-center">{project.name}</p>
           </div>
           <div className="px-4 py-5 sm:p-6">
             {/* Image Content */}
